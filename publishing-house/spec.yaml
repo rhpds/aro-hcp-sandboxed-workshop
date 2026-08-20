@@ -20,12 +20,18 @@ project:
   workflow_id: "e5dbe8a5-235e-465e-a9bb-d473b6b11901"
 
 spec:
-  title: ""
-  learning_objectives: []
+  title: "ARO HCP + OpenShift Sandboxed Containers Workshop"
+  learning_objectives:
+    - "Verify ARO HCP's managed control plane model by inspecting Azure resource groups and HyperShift CRDs"
+    - "Scale a NodePool and correlate the Kubernetes-layer action to its Azure consequence"
+    - "Deploy OpenShift Sandboxed Containers and configure KataConfig on a kata-dedicated NodePool"
+    - "Troubleshoot and resolve common SCC admission failures for kata workloads"
+    - "Demonstrate kernel-level isolation by comparing host, runc, and kata pod kernel environments"
+    - "Analyze the blast radius of multi-tenant workload compromise under runc versus kata isolation"
   modules: []              # [{id, title, duration_min}] — written by intake Phase 4; id is stable (e.g. module-01)
   environment:
-    platform: ""               # ocp | rhel-vms — determines which sizing fields apply
-    topology: ""               # shared-cluster | per-student | cnv-pool
+    platform: "ocp"            # ocp | rhel-vms — determines which sizing fields apply
+    topology: "per-student"    # shared-cluster | per-student | cnv-pool
     cloud_provider: cnv        # cnv | aws | troshka — cnv is default
     max_concurrent_users: null # required if topology = shared-cluster
 
@@ -55,8 +61,8 @@ spec:
     external_services: []              # named external service dependencies e.g. [github.com]
     gpu_nodes: 0                       # number of GPU nodes (0 = none)
     gpu_type: ""                       # e.g. NVIDIA A100 40GB (required if gpu_nodes > 0)
-  duration_hours: null
-  audience: ""               # beginner | intermediate | advanced
+  duration_hours: 2
+  audience: "intermediate"   # beginner | intermediate | advanced
 
 development:
   automation:
