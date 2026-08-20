@@ -84,14 +84,14 @@ Intermediate
 
 - **Cloud provider:** Azure (ARO HCP) — ⚠️ requires infra reviewer confirmation on provisioning path; not a standard CNV/AWS/Troshka deployment
 - **Cluster type:** Multinode — standard worker NodePool (sizing TBD after Sandboxed Containers testing) + kata-dedicated NodePool (Standard_D4s_v3, minimum SKU for nested virtualization)
-- **OCP version:** 4.20 (minimum)
+- **OCP version:** 5.0 (target, GA expected soon; infra reviewer to confirm feasibility and ARO HCP compatibility — fallback to 4.20)
 - **Topology:** Per-student — each participant receives a pre-provisioned ARO HCP cluster
 - **Sizing:** Control plane managed by Red Hat (ARO HCP). Standard workers: count/CPU/RAM/disk TBD after testing. Kata NodePool: Standard_D4s_v3, count TBD.
 - **Automation approach:** Both (Ansible + GitOps) — pre-provisioning of ARO HCP cluster and delivery of kubeconfig/Azure CLI credentials to each participant
 - **AI/MaaS:** None
 - **External services:** management.azure.com (Azure CLI, modules 1–3), registry.redhat.io (operator images, module 5), registry.access.redhat.com, quay.io (kata runtime images)
 - **AAP version:** Not applicable
-- **Non-GA products:** None (all GA)
+- **Non-GA products:** Red Hat OpenShift Container Platform 5.0 — GA expected imminently; infra reviewer to confirm. Fallback to OCP 4.20 if not yet available at build time.
 
 ## Assessment Strategy (Optional)
 

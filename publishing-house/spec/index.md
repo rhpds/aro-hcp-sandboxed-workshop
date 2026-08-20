@@ -1,0 +1,17 @@
+# ARO HCP + OpenShift Sandboxed Containers Workshop
+
+Welcome to the project spec. Use the navigation to browse the design and module outlines.
+
+- [Design Spec](design.md)
+- [Module 0 - Intro Preflight](modules/module-00-intro-preflight.md)
+- [Module 1 - Inspect Resource Group](modules/module-01-inspect-resource-group.md)
+- [Module 2 - Hypershift Crds](modules/module-02-hypershift-crds.md)
+- [Module 3 - Scale Nodepool](modules/module-03-scale-nodepool.md)
+- [Module 4 - Kata Nodepool](modules/module-04-kata-nodepool.md)
+- [Module 5 - Install Osc Operator](modules/module-05-install-osc-operator.md)
+- [Module 6 - Kataconfig Runtimeclass](modules/module-06-kataconfig-runtimeclass.md)
+- [Module 7 - Scc Kata](modules/module-07-scc-kata.md)
+- [Module 8 - Kernel Isolation](modules/module-08-kernel-isolation.md)
+- [Module 9 - Multitenant Isolation](modules/module-09-multitenant-isolation.md)
+- [Module 10 - Host Escape](modules/module-10-host-escape.md)
+- [Module 11 - Wrapup](modules/module-11-wrapup.md)
