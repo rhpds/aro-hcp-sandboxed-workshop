@@ -104,8 +104,27 @@ approval_checklist:
     catalog_gap: ""
     design_overview: ""
     module_summaries: []
-    rcars_overlap_pct: null
-    rcars_top_matches: []
+    rcars_overlap_pct: 76
+    rcars_top_matches:
+      - title: "Understanding Confidential Containers - Workshop on ARO"
+        ci_name: "azure-gpte.ocp4-sandbox-workshop-on-aro.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=azure-gpte.ocp4-sandbox-workshop-on-aro.prod"
+        relevance_score: 76
+        why_it_fits: "Runs on ARO and uses the OpenShift Sandboxed Containers operator with Kata Containers (kata-remote runtime class), covering KataConfig CRD configuration."
+        workloads: []
+      - title: "Experience OpenShift Virtualization with Azure Red Hat OpenShift"
+        ci_name: "azure-gpte.aro-virt-roadshow.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=azure-gpte.aro-virt-roadshow.prod"
+        relevance_score: 49
+        why_it_fits: "Shares the ARO platform context but focuses on VM management and VMware migration."
+        workloads: []
+      - title: "Using Hosted Control Planes for OpenShift on OpenShift"
+        ci_name: "openshift-cnv.hcp-ocp-virt-cnv.prod"
+        url: "https://catalog.demo.redhat.com/catalog?item=openshift-cnv.hcp-ocp-virt-cnv.prod"
+        relevance_score: 37
+        why_it_fits: "Covers Hosted Control Planes and NodePool scaling, but targets HCP on OpenShift Virtualization (KubeVirt) rather than ARO HCP on Azure."
+        workloads: []
+    catalog_gap: "No existing catalog item combines ARO HCP's managed control plane model with OpenShift Sandboxed Containers isolation verification in a 120-minute field format. The closest match (CoCo Workshop on ARO) covers OSC operator mechanics but is a 4-hour attestation deep-dive. This design uniquely pairs Azure CLI-based control plane inspection (Modules 1-3) with kernel isolation proof and host-escape simulation (Modules 8-10)."
     rejections: []
 
   infra:
