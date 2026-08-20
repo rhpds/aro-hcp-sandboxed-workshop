@@ -28,7 +28,19 @@ spec:
     - "Troubleshoot and resolve common SCC admission failures for kata workloads"
     - "Demonstrate kernel-level isolation by comparing host, runc, and kata pod kernel environments"
     - "Analyze the blast radius of multi-tenant workload compromise under runc versus kata isolation"
-  modules: []              # [{id, title, duration_min}] — written by intake Phase 4; id is stable (e.g. module-01)
+  modules:
+    - {id: module-00, title: "Introduction and Pre-Flight", duration_min: 10, status: not_started}
+    - {id: module-01, title: "Inspect the Cluster Resource Group", duration_min: 10, status: not_started}
+    - {id: module-02, title: "Explore HyperShift CRDs — Where Is the Control Plane?", duration_min: 10, status: not_started}
+    - {id: module-03, title: "Scale a NodePool", duration_min: 10, status: not_started}
+    - {id: module-04, title: "Create a Kata-Dedicated NodePool", duration_min: 10, status: not_started}
+    - {id: module-05, title: "Install the Sandboxed Containers Operator", duration_min: 10, status: not_started}
+    - {id: module-06, title: "Apply KataConfig and Verify RuntimeClass", duration_min: 10, status: not_started}
+    - {id: module-07, title: "SCC + Kata — Trigger, Diagnose, Fix", duration_min: 10, status: not_started}
+    - {id: module-08, title: "Untrusted Workload — Kernel Isolation", duration_min: 10, status: not_started}
+    - {id: module-09, title: "Multi-Tenant Isolation", duration_min: 10, status: not_started}
+    - {id: module-10, title: "Build Pipeline — Host Escape Attempt", duration_min: 10, status: not_started}
+    - {id: module-11, title: "Wrap-Up & Questions", duration_min: 10, status: not_started}
   environment:
     platform: "ocp"            # ocp | rhel-vms — determines which sizing fields apply
     topology: "per-student"    # shared-cluster | per-student | cnv-pool
@@ -87,7 +99,7 @@ tracking:
 approval_checklist:
 
   content:
-    prerequisites_verifiable: null
+    prerequisites_verifiable: false  # trust-based, no automated prerequisite checks
     assessment_strategy: ""
     catalog_gap: ""
     design_overview: ""
