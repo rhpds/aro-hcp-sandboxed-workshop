@@ -82,16 +82,16 @@ Intermediate
 
 ## Infrastructure Requirements
 
-- **Cloud provider:** TBD — confirmed in infrastructure phase
-- **Cluster type:** TBD — confirmed in infrastructure phase
-- **OCP version:** TBD — confirmed in infrastructure phase
-- **Topology:** TBD — confirmed in infrastructure phase
-- **Sizing:** TBD — confirmed in infrastructure phase
-- **Automation approach:** TBD — confirmed in infrastructure phase
-- **AI/MaaS:** TBD — confirmed in infrastructure phase
-- **External services:** TBD — confirmed in infrastructure phase
-- **AAP version:** TBD — confirmed in infrastructure phase
-- **Non-GA products:** TBD — confirmed in infrastructure phase
+- **Cloud provider:** Azure (ARO HCP) — ⚠️ requires infra reviewer confirmation on provisioning path; not a standard CNV/AWS/Troshka deployment
+- **Cluster type:** Multinode — standard worker NodePool (sizing TBD after Sandboxed Containers testing) + kata-dedicated NodePool (Standard_D4s_v3, minimum SKU for nested virtualization)
+- **OCP version:** 4.20 (minimum)
+- **Topology:** Per-student — each participant receives a pre-provisioned ARO HCP cluster
+- **Sizing:** Control plane managed by Red Hat (ARO HCP). Standard workers: count/CPU/RAM/disk TBD after testing. Kata NodePool: Standard_D4s_v3, count TBD.
+- **Automation approach:** Both (Ansible + GitOps) — pre-provisioning of ARO HCP cluster and delivery of kubeconfig/Azure CLI credentials to each participant
+- **AI/MaaS:** None
+- **External services:** management.azure.com (Azure CLI, modules 1–3), registry.redhat.io (operator images, module 5), registry.access.redhat.com, quay.io (kata runtime images)
+- **AAP version:** Not applicable
+- **Non-GA products:** None (all GA)
 
 ## Assessment Strategy (Optional)
 
