@@ -8,7 +8,7 @@ metadata:
     kernel-level pod isolation through live host-escape simulations.
   annotations:
     ph.rhdp.io/content-type: lab
-    ph.rhdp.io/deployment-mode: self_published
+    ph.rhdp.io/deployment-mode: rhdp_published
     ph.rhdp.io/github-user: gmidha1
     ph.rhdp.io/owner: gmidha@redhat.com
     backstage.io/techdocs-ref: dir:.
@@ -17,7 +17,7 @@ metadata:
   tags:
     - publishing-house
     - lab
-    - self-published
+    - rhdp-published
   links:
     - url: https://github.com/rhpds/aro-hcp-sandboxed-workshop
       title: Repository
