@@ -4,8 +4,8 @@ metadata:
   name: aro-hcp-sandboxed-workshop
   title: aro-hcp-sandboxed-workshop
   description: A 120-minute hands-on lab in which attendees learn about ARO HCP's
-    managed control plane model and prove OpenShift Sandboxed Containers'
-    kernel-level pod isolation through live host-escape simulations.
+    managed control plane model and prove OpenShift Sandboxed Containers' kernel-level
+    pod isolation through live host-escape simulations.
   annotations:
     ph.rhdp.io/content-type: lab
     ph.rhdp.io/deployment-mode: rhdp_published
@@ -13,21 +13,24 @@ metadata:
     ph.rhdp.io/owner: gmidha@redhat.com
     backstage.io/techdocs-ref: dir:.
     github.com/project-slug: rhpds/aro-hcp-sandboxed-workshop
-    ph.rhdp.io/created-at: 2026-08-20T10:54:43.610Z
+    ph.rhdp.io/created-at: 2026-08-20 10:54:43.610000+00:00
   tags:
-    - publishing-house
-    - lab
-    - rhdp-published
+  - publishing-house
+  - lab
+  - rhdp-published
   links:
-    - url: https://github.com/rhpds/aro-hcp-sandboxed-workshop
-      title: Repository
-      icon: github
-    - url: https://devspaces.apps.ocpv-infra02.wdc07.infra.demo.redhat.com#https://github.com/rhpds/aro-hcp-sandboxed-workshop
-      title: Open in DevSpaces
-      icon: catalog
-    - url: https://central-api-publishing-house.apps.ocpv-infra02.wdc07.infra.demo.redhat.com
-      title: Central
-      icon: dashboard
+  - url: https://github.com/rhpds/aro-hcp-sandboxed-workshop
+    title: Repository
+    icon: github
+  - url: https://devspaces.apps.ocpv-infra02.wdc07.infra.demo.redhat.com#https://github.com/rhpds/aro-hcp-sandboxed-workshop
+    title: Open in DevSpaces
+    icon: catalog
+  - url: https://central-api-publishing-house.apps.ocpv-infra02.wdc07.infra.demo.redhat.com
+    title: Central
+    icon: dashboard
+  - url: https://redhat.atlassian.net/browse/RHDPCD-1166
+    title: Jira Epic
+    icon: dashboard
 spec:
   type: content
   lifecycle: experimental

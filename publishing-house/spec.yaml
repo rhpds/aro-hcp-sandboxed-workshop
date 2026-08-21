@@ -16,7 +16,7 @@ project:
   automation_type: "both"
   description: "A 120-minute hands-on lab in which attendees learn about ARO HCP's managed control plane model and prove OpenShift Sandboxed Containers' kernel-level pod isolation through live host-escape simulations."
   # content_reviewer_email and infra_reviewer_email are assigned by the RHDP team — not set by the author
-  jira_ticket: ""
+  jira_ticket: "RHDPCD-1166"
   workflow_id: "e5dbe8a5-235e-465e-a9bb-d473b6b11901"
 
 spec:
